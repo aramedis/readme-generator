@@ -1,7 +1,6 @@
 import fs from "fs";
 import inquirer from "inquirer";
-import path from "path";
-const generateMarkdown = require("./utils/generateMarkdown");
+import generateMarkdown from "./utils/generateMarkdown.js";
 
 // array of questions for user
 inquirer
@@ -13,7 +12,7 @@ inquirer
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Description of the project',
     },
     {
@@ -44,15 +43,15 @@ inquirer
     {
         type: 'input',
         name: 'questions',
-        message: 'Question section',
+        message: 'Contact for questions',
     },
   ])
   .then((response) => {
     console.log(response);
     
-    const HTMLTemplate = generateHTML(response);
+    const mdTemplate = generateMarkdown(response);
 
-    fs.writeFile(`${response.name}.html`, HTMLTemplate, (error) =>
+    fs.writeFile(`${response.title}.md`, mdTemplate, (error) =>
       error ? console.error(error) : console.log(`Success!`)
     );
   });
