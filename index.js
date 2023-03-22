@@ -6,6 +6,12 @@ import generateMarkdown from "./utils/generateMarkdown.js";
 inquirer
   .prompt([
     {
+        type: 'list',
+        name: 'license',
+        message: 'What license should the project fall under?',
+        choices: ['MIT', 'Apache license 2.0', 'Mozilla Public License 2.0', 'Creative Commons Attribution 4.0'],
+    },
+    {
         type: 'input',
         name: 'title',
         message: 'Title of the project',
@@ -27,11 +33,6 @@ inquirer
     },
     {
         type: 'input',
-        name: 'license',
-        message: 'Applicable licenses',
-    },
-    {
-        type: 'input',
         name: 'contributors',
         message: 'Contributors',
     },
@@ -43,7 +44,12 @@ inquirer
     {
         type: 'input',
         name: 'questions',
-        message: 'Contact for questions',
+        message: 'Email address for questions',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Github user ID',
     },
   ])
   .then((response) => {

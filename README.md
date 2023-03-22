@@ -1,33 +1,36 @@
-# readme-generator
 
-## TABLE OF CONTENTS
+  ##README GENERATOR
+
+  ## TABLE OF CONTENTS
+- [License](#license)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Contributors](#contributors)
 - [Tests](#tests)
 - [Contact](#contact)
 
-## Description
-generates readme.md using inquirer plugin
+  ## LICENSE
+  MIT[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## INSTALLATION
-install inquirer and execute through node.js
+  ## DESCRIPTION
+  generate readme through Inquirer
 
-## USAGE
-  'node index.js' in the terminal and answer the prompts
+  ## INSTALLATION
+  install inquirer
 
-## LICENSE
-  MIT
+  ## USAGE
+  * 'npm start' in react terminal
 
-## CONTRIBUTORS
-  N/A
-
-## TESTS
-  N/A
-
-## CONTACT
-  N/A
+  * ![usagegif](./assets/readmedemo.gif)
   
-![preview](./assets/readme.png)
+  ## CONTRIBUTORS
+  Lukas-h, "Markdown License Badges for your Project", Github
+
+  ## TESTS
+  na
+
+  ## CONTACT
+  * na
+  * https://github.com/aramedis
+  
